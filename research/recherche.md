@@ -4,11 +4,11 @@ Problématique : Comment garantir la rétrocompatibilité d'une bibliothèque pa
 
 ## Cadre
 
-On suppose travailler avec une bibliothèque dont on a modifié l'ABI,
-sur une machine - d'architecture x86-64
-                - d'horloge à fréquence fixée à 1 GHz
-                - d'une RAM de 8 Gio/GiB
-                - de disque de 128 Gio/GiB
+On suppose travailler avec une bibliothèque dont: \
+    - on a modifié l'ABI, \
+    - d'horloge à fréquence fixée à 1 GHz \
+    - d'une RAM de 8 Gio/GiB \
+    - de disque de 128 Gio/GiB \
 exécutant un OS UNIX-like
 
 ## Shared library
@@ -28,6 +28,8 @@ Processus de résolution des symboles à l’exécution : \
 **[GOT & PLT](https://reverseengineering.stackexchange.com/questions/1992/what-is-plt-got)**
 
 ## Data differencing
+
+[source](https://hackernoon.com/delta-compression-diff-algorithms-and-delta-file-formats-practical-guide-7v1p3uhz)
 
 ### Delta
 
