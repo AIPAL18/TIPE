@@ -2,15 +2,21 @@
 
 Problématique : Comment garantir la rétrocompatibilité d'une bibliothèque partagée en optimisant l'espace sans sacrifier les performances.
 
-Objectif: étude des qualités/propriétés de fonctions de compression sans perte.
+Problématique 2: Comment garantir la rétrocompatibilité d'une bibliothèque partagée en minimisant l'impacte sur l'exécution ?
 
-Sous-objectif: étude d'algorithme de recherche sur des données compressées sans perte.
+Objectifs:
 
-Thèmes : Compressed pattern matching, Compression, Data differencing, Search algorithm, Lossless Compression, <s>signature/identification</s>
+* étude des qualités/propriétés de fonctions de compression sans perte.
+* étude d'algorithmes de recherche sur des données compressées sans perte.
 
-Mots clés : <s>Problématique de modularité, library, optimisation de l'espace en garantissant des performances similaire.</s> Algorithme de compression sans perte, recherche sur des données compressées sans perte, bibliothèque partagée, elf, linux
+Thèmes : Compressed pattern matching, Compression, Data differencing, Search algorithm, Lossless Compression
+
+<details>
+<summary>
 
 ## (Cadre)<sup style="color: grey; font-weight: normal !important;" title="Uniquement nécessaire pour les approximation de temps">&#x1F6C8;</sup>
+
+</summary>
 
 <s>On suppose travailler avec une bibliothèque dont on a modifié l'ABI, \
     - d'horloge à fréquence fixée à 1 GHz \
@@ -18,42 +24,16 @@ Mots clés : <s>Problématique de modularité, library, optimisation de l'espace
     - de disque de 128 Gio/GiB \
 exécutant un OS UNIX-like</s>
 
+</details>
+
 ## Objectif(s)
 
-### Comparaison d'algorithme de compression (propriétés/qualités)
+1. Recherche des qualités d'un algorithme de compression (LossLess, décompressible localement, etc.)
+2. Création d'un format pour la compression (pour des caractéristiques données)
+3. Recherche dans des donnée compressées (influencée par .2)
 
-* Myers Algorithm
-* Bentley-McIlroy
-* Xdelta
-* BSDiff
+## Axe d'amélioration
 
-### Comparaison de format pour la compression (pour des caractéristiques donnée)
+En pratique, c'est un non problème. Les programmes requérant ce genre de technologie sont très (très) minoritaires, voire inexistants. Privatim, je n'en connais pas.
 
-* VCDiff[<sup>(wiki)</sup>](https://en.wikipedia.org/wiki/VCDIFF)
-* Unix .patch
-* ...
-
-### Recherche dans des donnée compressées[<sup>(wiki)</sup>](https://en.wikipedia.org/wiki/Compressed_pattern_matching)
-
-* <s>signature</s>
-
-## Bibliographie / SOTA (non exhaustive)
-
-### Myers
-
-MYERS, EUGENE W. “An O(ND) Difference Algorithm and Its Variations.” Algorithmica, vol. 1, Nov. 1986, pp. 251–266, https://doi.org/10.1007/BF01840446.
-
-### Bentley–McIlroy
-
-Bentley, J.L. and McIlroy, M.D. (1993), Engineering a sort function. Softw: Pract. Exper., 23: 1249-1265. https://doi.org/10.1002/spe.4380231105
-
-#### Implémentations
-
-* [Bentley–McIlroy algorithm (GitHub)](https://github.com/aprescott/bentley_mcilroy)
-* [open-vcdiff - Google (GitHub)](https://github.com/google/open-vcdiff)
-
-### Xdelta
-
-https://doi.org/10.17487/RFC3284
-
-https://github.com/jmacd/xdelta
+On peut considérer d'autre type de compression lossless adapté à la recherche et la une décompression local, rapide. <sup>(lesquels?)</sup>

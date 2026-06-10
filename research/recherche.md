@@ -11,7 +11,14 @@ On suppose travailler avec une bibliothèque dont: \
     - de disque de 128 Gio/GiB \
 exécutant un OS UNIX-like
 
-## Shared library
+## LD [(page)](./recherche_content/ld.md)
+
+<details>
+<summary>
+
+## Shared library/ELF [(page)](./recherche_content/elf.md)
+
+</summary>
 
 **[Shared Library](https://en.wikipedia.org/wiki/Shared_library)**
 
@@ -27,9 +34,17 @@ Processus de résolution des symboles à l’exécution : \
 
 **[GOT & PLT](https://reverseengineering.stackexchange.com/questions/1992/what-is-plt-got)**
 
-## Data differencing
+</details>
+<details>
+<summary>
 
-[source](https://hackernoon.com/delta-compression-diff-algorithms-and-delta-file-formats-practical-guide-7v1p3uhz)
+## Data differencing [(page)](./recherche_content/diffs.md)
+
+</summary>
+
+[source 1](https://hackernoon.com/delta-compression-diff-algorithms-and-delta-file-formats-practical-guide-7v1p3uhz)
+
+[source 1 bis](https://dev.to/dominikelmiger/delta-compression-a-practical-guide-to-diff-algorithms-and-delta-file-formats-23bi)
 
 ### Delta
 
@@ -40,7 +55,13 @@ Processus de résolution des symboles à l’exécution : \
 
 **[Xdelta](https://github.com/jmacd/xdelta)**
 
-## Signature
+</details>
+<details>
+<summary>
+
+## <s>Signature</s>
+
+</summary>
 
 Efficient for search, we don't care about how complexe it is to make.
 
@@ -62,3 +83,5 @@ Efficient for search, we don't care about how complexe it is to make.
 **Fingerprints**
 
 **Data Fingerprinting**
+
+</details>

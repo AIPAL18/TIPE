@@ -1,0 +1,3 @@
+[submodule "tools/bentley_mcilroy"]
+	path = tools/bentley_mcilroy
+	url = https://github.com/aprescott/bentley_mcilroy
