@@ -1,6 +1,10 @@
 # Algorithmes de différenciation par delta
 
-[llm](./_diffs1.md)
+[*@llm*](./_diffs1.md)
+
+[source 1](https://hackernoon.com/delta-compression-diff-algorithms-and-delta-file-formats-practical-guide-7v1p3uhz)
+
+[source 1 bis](https://dev.to/dominikelmiger/delta-compression-a-practical-guide-to-diff-algorithms-and-delta-file-formats-23bi)
 
 ## Insertion/suppression
 

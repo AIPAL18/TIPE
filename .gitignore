@@ -2,6 +2,7 @@ CRP/
 old_SOTA/
 # Authorized licensed, use limited
 SOTA/*.pdf
+*.llm.*
 
 # -----------------------------------------------------------------------------
 # C

@@ -2,8 +2,6 @@
 
 Problématique : Comment garantir la rétrocompatibilité d'une bibliothèque partagée en optimisant l'espace sans sacrifier les performances.
 
-Problématique 2: Comment garantir la rétrocompatibilité d'une bibliothèque partagée en minimisant l'impacte sur l'exécution ?
-
 Objectifs:
 
 * étude des qualités/propriétés de fonctions de compression sans perte.

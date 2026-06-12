@@ -11,55 +11,26 @@ On suppose travailler avec une bibliothèque dont: \
     - de disque de 128 Gio/GiB \
 exécutant un OS UNIX-like
 
-## LD [(page)](./recherche_content/ld.md)
+## ld
 
+[@ld](./recher  che_content/ld.md)
+
+## Shared library/ELF
+
+* [@elf](./recherche_content/elf.md)
+* [@memory](./recherche_content/memory.md)
+
+## Compression et recherche
+
+* [@comp](./recherche_content/comp.md)
+* [@search](./recherche_content/search.md)
+* [@diffs](./recherche_content/diffs.md)
+
+<s>
 <details>
 <summary>
 
-## Shared library/ELF [(page)](./recherche_content/elf.md)
-
-</summary>
-
-**[Shared Library](https://en.wikipedia.org/wiki/Shared_library)**
-
-**[Executable and Linkable Format](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format)**
-
-**[In-depth: ELF - The Extensible & Linkable Format](https://www.youtube.com/watch?v=nC1U1LJQL8o)**
-
-Processus de résolution des symboles à l’exécution : \
-  [https://guy-grave.developpez.com/articles/assemblage-edition-liens/](https://guy-grave.developpez.com/articles/assemblage-edition-liens/) \
-  [Global Offset Table (GOT) and Procedure Linkage Table (PLT) [YTB]](https://www.youtube.com/watch?v=kUk5pw4w0h4)
-
-**[Address space layout randomisation](https://en.wikipedia.org/wiki/Address_space_layout_randomization)**
-
-**[GOT & PLT](https://reverseengineering.stackexchange.com/questions/1992/what-is-plt-got)**
-
-</details>
-<details>
-<summary>
-
-## Data differencing [(page)](./recherche_content/diffs.md)
-
-</summary>
-
-[source 1](https://hackernoon.com/delta-compression-diff-algorithms-and-delta-file-formats-practical-guide-7v1p3uhz)
-
-[source 1 bis](https://dev.to/dominikelmiger/delta-compression-a-practical-guide-to-diff-algorithms-and-delta-file-formats-23bi)
-
-### Delta
-
-**[Delta encoding (wiki)](https://en.wikipedia.org/wiki/Delta_encoding)** :
-  coucou
-
-**[VCDIFF](https://en.wikipedia.org/wiki/VCDIFF)**
-
-**[Xdelta](https://github.com/jmacd/xdelta)**
-
-</details>
-<details>
-<summary>
-
-## <s>Signature</s>
+## Signature
 
 </summary>
 
@@ -84,4 +55,4 @@ Efficient for search, we don't care about how complexe it is to make.
 
 **Data Fingerprinting**
 
-</details>
+</details></s>
