@@ -3,6 +3,7 @@ old_SOTA/
 # Authorized licensed, use limited
 SOTA/*.pdf
 *.llm.*
+*.ignore.*
 
 # -----------------------------------------------------------------------------
 # C
@@ -33,8 +34,8 @@ SOTA/*.pdf
 
 # Shared objects (inc. Windows DLLs)
 *.dll
-*.so
-*.so.*
+# *.so      # NOTE: We need them
+# *.so.*    # NOTE: same
 *.dylib
 
 # Executables
@@ -43,7 +44,7 @@ SOTA/*.pdf
 *.app
 *.i*86
 *.x86_64
-*.hex
+# *.hex     # Note: We need them
 
 # Debug files
 *.dSYM/
@@ -163,20 +164,21 @@ acs-*.bib
 *.tfm
 
 #(r)(e)ledmac/(r)(e)ledpar
-*.end
-*.?end
-*.[1-9]
-*.[1-9][0-9]
-*.[1-9][0-9][0-9]
-*.[1-9]R
-*.[1-9][0-9]R
-*.[1-9][0-9][0-9]R
-*.eledsec[1-9]
-*.eledsec[1-9]R
-*.eledsec[1-9][0-9]
-*.eledsec[1-9][0-9]R
-*.eledsec[1-9][0-9][0-9]
-*.eledsec[1-9][0-9][0-9]R
+# Note: using *.[0-9] so...
+# *.end
+# *.?end
+# *.[1-9]
+# *.[1-9][0-9]
+# *.[1-9][0-9][0-9]
+# *.[1-9]R
+# *.[1-9][0-9]R
+# *.[1-9][0-9][0-9]R
+# *.eledsec[1-9]
+# *.eledsec[1-9]R
+# *.eledsec[1-9][0-9]
+# *.eledsec[1-9][0-9]R
+# *.eledsec[1-9][0-9][0-9]
+# *.eledsec[1-9][0-9][0-9]R
 
 # glossaries
 *.acn
