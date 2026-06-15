@@ -1,0 +1,70 @@
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 09 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - FreeBSD
+  ABI Version:                       0
+  Type:                              DYN (Shared object file)
+  Machine:                           Intel 80386
+  Version:                           0x1
+  Entry point address:               0x1ec30
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          1005312 (bytes into file)
+  Flags:                             0x0
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         3
+  Size of section headers:           40 (bytes)
+  Number of section headers:         30
+  Section header string table index: 29
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .hash             HASH            00000094 000094 004cb0 04   A  2   0  4
+  [ 2] .dynsym           DYNSYM          00004d44 004d44 00b250 10   A  3  29  4
+  [ 3] .dynstr           STRTAB          0000ff94 00ff94 006509 00   A  0   0  1
+  [ 4] .rel.dyn          REL             000164a0 0164a0 002c28 08   A  2   0  4
+  [ 5] .rel.plt          REL             000190c8 0190c8 001e68 08   A  2   7  4
+  [ 6] .init             PROGBITS        0001af30 01af30 000011 00  AX  0   0  4
+  [ 7] .plt              PROGBITS        0001af44 01af44 003ce0 04  AX  0   0  4
+  [ 8] .text             PROGBITS        0001ec30 01ec30 0b2a70 00  AX  0   0 16
+  [ 9] .fini             PROGBITS        000d16a0 0d16a0 00000c 00  AX  0   0  4
+  [10] .rodata           PROGBITS        000d16c0 0d16c0 00aabc 00   A  0   0 32
+  [11] .data             PROGBITS        000dd180 0dc180 003fa0 00  WA  0   0 32
+  [12] .eh_frame         PROGBITS        000e1120 0e0120 000004 00   A  0   0  4
+  [13] .dynamic          DYNAMIC         000e1124 0e0124 0000a8 08  WA  3   0  4
+  [14] .ctors            PROGBITS        000e11cc 0e01cc 000008 00  WA  0   0  4
+  [15] .dtors            PROGBITS        000e11d4 0e01d4 000008 00  WA  0   0  4
+  [16] .jcr              PROGBITS        000e11dc 0e01dc 000004 00  WA  0   0  4
+  [17] .got              PROGBITS        000e11e0 0e01e0 0012e4 04  WA  0   0  4
+  [18] .bss              NOBITS          000e24e0 0e14e0 015fe4 00  WA  0   0 32
+  [19] .comment          PROGBITS        00000000 0e14e0 013ecb 00      0   0  1
+  [20] .gnu.warning[...] PROGBITS        00000000 0f53ab 000043 00      0   0  1
+  [21] .gnu.warning[...] PROGBITS        00000000 0f53ee 000044 00      0   0  1
+  [22] .gnu.warning.gets PROGBITS        00000000 0f5432 000034 00      0   0  1
+  [23] .gnu.warning[...] PROGBITS        00000000 0f5466 000033 00      0   0  1
+  [24] .gnu.warning[...] PROGBITS        00000000 0f5499 000033 00      0   0  1
+  [25] .gnu.warning[...] PROGBITS        00000000 0f54cc 00002f 00      0   0  1
+  [26] .gnu.warning[...] PROGBITS        00000000 0f54fb 000030 00      0   0  1
+  [27] .gnu.warning[...] PROGBITS        00000000 0f552b 000043 00      0   0  1
+  [28] .gnu.warning[...] PROGBITS        00000000 0f556e 000043 00      0   0  1
+  [29] .shstrtab         STRTAB          00000000 0f55b1 00014c 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  R (retain), D (mbind), p (processor specific)
+
+Program Headers:
+  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
+  LOAD           0x000000 0x00000000 0x00000000 0xdc17c 0xdc17c R E 0x1000
+  LOAD           0x0dc180 0x000dd180 0x000dd180 0x05344 0x1b344 RW  0x1000
+  DYNAMIC        0x0e0124 0x000e1124 0x000e1124 0x000a8 0x000a8 RW  0x4
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     .hash .dynsym .dynstr .rel.dyn .rel.plt .init .plt .text .fini .rodata 
+   01     .data .eh_frame .dynamic .ctors .dtors .jcr .got .bss 
+   02     .dynamic 

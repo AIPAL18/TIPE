@@ -6,6 +6,7 @@ TIPE 2026-
 
 ```tree
 .
+├── archive
 ├── CDB
 ├── LICENSE
 ├── Presentation
@@ -16,6 +17,7 @@ TIPE 2026-
 └── tools
 ```
 
+* **archive** : dossier de snapshot/gèle de sources
 * **CDB** : **C**ahier **D**e **B**ord (discontinué)
 * **Presentation** : différentes présentations (diaporama)
 * **research** : différents tests et recherches

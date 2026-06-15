@@ -5,7 +5,7 @@ Problématique : Comment garantir la rétrocompatibilité d'une bibliothèque pa
 ## Cadre
 
 On suppose travailler avec une bibliothèque dont: \
-    - on a modifié l'ABI, \
+    - on a modifié l'interface de la librairie partagée, \
     - d'horloge à fréquence fixée à 1 GHz \
     - d'une RAM de 8 Gio/GiB \
     - de disque de 128 Gio/GiB \
@@ -13,7 +13,7 @@ exécutant un OS UNIX-like
 
 ## ld
 
-[@ld](./recher  che_content/ld.md)
+[@ld](./recherche_content/ld.md)
 
 ## Shared library/ELF
 
@@ -23,8 +23,9 @@ exécutant un OS UNIX-like
 ## Compression et recherche
 
 * [@comp](./recherche_content/comp.md)
-* [@search](./recherche_content/search.md)
 * [@diffs](./recherche_content/diffs.md)
+* [@format](./recherche_content/format.md)
+* [@search](./recherche_content/search.md)
 
 <s>
 <details>
