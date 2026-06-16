@@ -1,63 +1,46 @@
 # Content
 
-## I
+## Page de garde (1)
 
-Comment garantir la rétrocompatibilité d'une bibliothèque partagée en optimisant l'espace sans sacrifier les performances ?
+## Contextualisation (2)
 
-Objectifs:
+* Bibliothèque partagée: fichier qui contient du code redondant et très utilisé
+* Liaison dynamique -> Dépendance à la compilation
+* Mise à jour d'un bib -> impacte programme qui est dépendant
+* version 32 bits vs 64 bits
+* Résolution: avoir plusieurs version d'un même fichier
 
-* étude des qualités/propriétés de fonctions de compression sans perte.
-* étude d'algorithmes de recherche sur des données compressées sans perte.
+## Problématique (3)
 
-## Plan
+## Compression de données (4)
 
-* Rappel du contexte
-* Problématique
-* Angle d'attaque
-* SOTA
-* Déduction des qualités souhaitées
-* Tests/Comparaisons
-* Réévaluation/Estimation des qualités requises
-* Conclusion
+* Compression des fichiers en un seul par juxtaposition
+* Propriétés de la compression
 
-## Rappel du contexte
+## Compression par delta (5)
 
-### L'histoire (courte) des bibliothèques partagées
+* force: beaucoup de répétition
+* Garder un objet, et noter les opérations pour aller vers l'autre objet
+* Insertion/suppression
+* Déplacement de blocs (copie/insertion) ; plus moderne
 
-.../...
+## Segments ELF (6)
 
-### Le format ELF
+* La résolution est fait à l'exécution par liaison paresseuse.
+* appel d'une fonction remplacé par un appel à une procedure de résolution
+* appel du lieur dynamique qui résout la dépendance :
+  * cherche dans les dépendances dynamiques la fonction appelée
+* écriture dans la Global Offset Table
 
-Les systèmes Unix utilisent pour la plupart ELF, un format de fichier binaire
-pour les fichiers objets, les exécutables, les bibliothèques de fonctions...
+## Recherche (7)
 
-### Mise-à-jour de l'interface de la librairie et problème
+* En résumé: plusieurs versions coexistent dans le même fichier
+* On peut exclure tous les symboles qui ne se rapportent pas à la version de laquelle le programme dépend
+* Recherche par plage
 
-.../...
+## Conclusion (8)
 
-## Problématique
-
-Comment garantir la rétrocompatibilité d'une bibliothèque partagée en optimisant l'espace sans sacrifier les performances ?
-
-### Explications
-
-.../...
-
-## Angle d'attaque (objectifs)
-
-Objectifs:
-
-* étude des qualités/propriétés de fonctions de compression sans perte.
-* étude d'algorithmes de recherche sur des données compressées sans perte.
-
-## SOTA
-
-### Lossless compression
-
-.../...
-
-### Compressed pattern matching
-
-.../...
-
-## Caractéristiques
+* Force : l'impacte à l'exécution devrait être minime:
+  * La compression est une union ensembliste de fichiers
+* Faiblesses : La différence en mémoire n'est pas significative
+  * Les programmes moderne 

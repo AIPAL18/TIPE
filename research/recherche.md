@@ -57,3 +57,5 @@ Efficient for search, we don't care about how complexe it is to make.
 **Data Fingerprinting**
 
 </details></s>
+
+* [Why Is the glibc Binary Called libc.so.6 Instead of libc.so.1 or libc.so.4? The Historical Reason Explained](https://linuxvox.com/blog/why-glibc-binary-is-called-libc-so-6-not-a-libc-so-1-or-libc-so-4/)
