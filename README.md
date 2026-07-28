@@ -8,6 +8,7 @@ TIPE 2026-
 .
 ├── archive
 ├── CDB
+├── experiences
 ├── LICENSE
 ├── Presentation
 ├── README.md
@@ -19,6 +20,7 @@ TIPE 2026-
 
 * **archive** : dossier de snapshot/gèle de sources
 * **CDB** : **C**ahier **D**e **B**ord (discontinué)
+* **experiences** : dossier regroupant les expériences, les protocoles, etc.
 * **Presentation** : différentes présentations (diaporama)
 * **research** : différents tests et recherches
 * **SOTA** : **S**tate **O**f **T**he **A**rt, état de l'art

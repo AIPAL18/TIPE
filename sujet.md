@@ -28,10 +28,12 @@ exécutant un OS UNIX-like</s>
 
 1. Recherche des qualités d'un algorithme de compression (LossLess, décompressible localement, etc.)
 2. Création d'un format pour la compression (pour des caractéristiques données)
-3. Recherche dans des donnée compressées (influencée par .2)
+3. Recherche dans des donnée compressées (influencé par .2)
 
-## Axe d'amélioration
+## Ressources
 
-En pratique, c'est un non problème. Les programmes requérant ce genre de technologie sont très (très) minoritaires, voire inexistants. Privatim, je n'en connais pas.
+* [@recherches](./research/recherche.md)
 
-On peut considérer d'autre type de compression lossless adapté à la recherche et la une décompression local, rapide. <sup>(lesquels?)</sup>
+## TODO
+
+* [ ] Expérience

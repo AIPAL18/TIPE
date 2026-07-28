@@ -43,4 +43,4 @@
 * Force : l'impacte à l'exécution devrait être minime:
   * La compression est une union ensembliste de fichiers
 * Faiblesses : La différence en mémoire n'est pas significative
-  * Les programmes moderne 
+* .../...
